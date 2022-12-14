@@ -1,0 +1,52 @@
+/************ HEADER STYLES START ***********/
+.site-header {
+    width: 100%;
+    background-image: url('../../images/header-bg-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+}
+
+.site-header__wrapper {
+    padding: 75px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__logo {
+    margin: 0;
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.446429px;
+    color: #FFFFFF;
+}
+
+.color-section__number {
+    margin-right: 8px;
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: var(--main-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.color-section__title {
+    margin: 0;
+    font-family: 'Ibarra Real Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: var(--main-text-color);
+}
+
+/************ HEADER STYLES END ***********/

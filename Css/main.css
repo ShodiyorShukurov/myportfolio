@@ -1,3 +1,8 @@
+/*********** ROOT ***********/
+:root {
+  --main-text-color:#33323D;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -338,7 +343,39 @@ template {
   display: none;
 }
 
-/* FONTS */ /* GENERAL */
+/* ibarra-real-nova-regular - latin */
+@font-face {
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ibarra-real-nova-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/ibarra-real-nova-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ibarra-real-nova-v20-latin-regular.woff2") format("woff2"), url("../fonts/ibarra-real-nova-v20-latin-regular.woff") format("woff"), url("../fonts/ibarra-real-nova-v20-latin-regular.ttf") format("truetype"), url("../fonts/ibarra-real-nova-v20-latin-regular.svg#IbarraRealNova") format("svg"); /* Legacy iOS */
+}
+/* ibarra-real-nova-700 - latin */
+@font-face {
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ibarra-real-nova-v20-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/ibarra-real-nova-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ibarra-real-nova-v20-latin-700.woff2") format("woff2"), url("../fonts/ibarra-real-nova-v20-latin-700.woff") format("woff"), url("../fonts/ibarra-real-nova-v20-latin-700.ttf") format("truetype"), url("../fonts/ibarra-real-nova-v20-latin-700.svg#IbarraRealNova") format("svg"); /* Legacy iOS */
+}
+/* public-sans-regular - latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/public-sans-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/public-sans-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/public-sans-v14-latin-regular.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-regular.woff") format("woff"), url("../fonts/public-sans-v14-latin-regular.ttf") format("truetype"), url("../fonts/public-sans-v14-latin-regular.svg#PublicSans") format("svg"); /* Legacy iOS */
+}
+/* public-sans-700 - latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/public-sans-v14-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/public-sans-v14-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/public-sans-v14-latin-700.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-700.woff") format("woff"), url("../fonts/public-sans-v14-latin-700.ttf") format("truetype"), url("../fonts/public-sans-v14-latin-700.svg#PublicSans") format("svg"); /* Legacy iOS */
+}
+/* GENERAL */
 html {
   box-sizing: border-box;
   height: 100%;
@@ -358,13 +395,23 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: "Public Sans", "Arial", sans-serif;
   background-color: #fff;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* VISUALLY-HIDDEN */
@@ -382,9 +429,62 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1250px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/************ HEADER STYLES START ***********/
+.site-header {
+  width: 100%;
+  background-image: url("../../images/header-bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+}
+
+.site-header__wrapper {
+  padding: 75px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__logo {
+  margin: 0;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.446429px;
+  color: #FFFFFF;
+}
+
+.color-section__number {
+  margin-right: 8px;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--main-text-color);
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.color-section__title {
+  margin: 0;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: var(--main-text-color);
+}
+
+/************ HEADER STYLES END ***********//*# sourceMappingURL=main.css.map */
